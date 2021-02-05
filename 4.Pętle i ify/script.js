@@ -74,12 +74,76 @@ for (let i = 0; i < 5; i++) {
     }
     console.log(result)
 }
+
+
 // Zadanie 8a
 
+for (let i = 1; i <= 5; i++) {
+  let row = "";
+  for (let j = 1; j <= i; j++) {
+    row += "*";
+  }
+  console.log(row);
+}
 // Zadanie 8b
+
+let star = ' *';
+
+for(let x = 0; x < 5; x++) {
+ var result = '';
+ for(y = 0; y < 5 - x; y++) {
+ result += ' ';
+ }
+ for(z = 0; z < x + 1; z++) {
+ result += star;
+ }
+ console.log(result);
+ }
 
 // Zadanie 8c
 
+  let tree = '';
+  const height = 5;
+  let stars = 1;
+  for (let row = 1; row <= height; row++) {
+    tree += ' '.repeat(height-row);
+    tree += '*'.repeat(stars) + '\n';
+    stars += 2;
+  }
+  console.log(tree);
+
 // Zadanie 8d
 
+let show = '';
+  let show1 = '';
+  const height = 5;
+  for (let row = 1; row <= height; row++) {
+    show += '*'.repeat(row)
+    for (let i = row; i < height; i++) {
+      show += i;
+    }
+    show += '\n';
+
+    show1 += '*'.repeat(height - row + 1);
+    for (let i = (height - row + 1); i < height; i++) {
+      show1 += i;
+    }
+    show1 += '\n';
+  }
+  console.log(show);
+  console.log("-".repeat(height));
+  console.log(show1);
+
 // Zadanie 8e
+
+  var dart = '';
+  const size = 5;
+  for (let i = 1; i <= size; i++) {
+    dart += ' '.repeat(size-i);
+    dart += '* '.repeat(i) + '\n';
+  }
+  for (let i = 0; i < (size-2); i++) {
+    dart += " ".repeat(size-1);
+    dart += "* \n";
+  }
+  console.log(dart);
