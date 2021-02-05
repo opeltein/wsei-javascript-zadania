@@ -16,3 +16,15 @@ let i = 0;
 },2000)
 
 //Zad1
+
+var counter = 1;
+
+function write() {
+  console.log("Cześć po raz " + counter);
+  counter++;
+  if (counter > 15) {
+    clearInterval(int);
+  }
+}
+var int = setInterval(write, 3000); 
+
