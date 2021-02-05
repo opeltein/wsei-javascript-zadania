@@ -28,7 +28,13 @@ console.log(fooFirstChild);
 const fooMiddleChild = foo.children[1]
 
 //Zad2
--------------------------------------------------------------------------------------
+  let downloadTxt = function(elementId) {
+        let el = document.querySelector(`#${elementId}`);
+        el.addEventListener('click', function(event) {
+            console.log(event.target.textContent.trim());
+        });
+    }
+    downloadTxt('ex2');
 //Zad3
 const buttons = document.querySelectorAll("#ex3 div button");
 
