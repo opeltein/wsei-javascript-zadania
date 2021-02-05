@@ -143,3 +143,40 @@ const func = (arr) =>{
 func([2,4,6,5, 22, 42]);
     
 //Zad 8 
+const tab1 = [11, 22, 33];
+const tab2 = [44, 55, 66];
+function write(tab1, tab2)
+{
+  var x = 0;
+  const tab3 = [];
+
+  for(var a = x; a <= tab1.length - 1; a++)
+  {
+    tab3[x] = tab1[x] + tab2[x];
+    x++;
+  }
+    console.log(tab3);
+}
+write(tab1, tab2);
+
+// Zadanie 9
+
+function ccc(a,b){ 
+        return a.filter(c => c != b);
+}
+console.log(ccc([1,2,3,4,5],3));
+
+// Zadanie 10
+
+const tab = [-99, -17, 0, 123, 512];
+var counter = 0;
+function write(tab)
+{
+  for( var a = counter; a < tab.length; a++)
+  {
+      tab[a] = (tab[a] - (2*tab[a]));
+    var arr = tab;
+  }
+  console.log(arr);
+}
+write(tab);
